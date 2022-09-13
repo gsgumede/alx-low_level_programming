@@ -10,7 +10,6 @@ void print_alphabet(void)
 
 {
 char ch = 'a';/*Declare the char*/
-int i = 0;/*Initialise the loop increment*/
 
 while (ch <= 'z')
 {
