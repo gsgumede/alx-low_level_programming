@@ -13,7 +13,7 @@ int j;/*Declare initial value for outer loop*/
 char alphabet = 'a';/*Declare and initialise the first alphabet*/
 
 /*alphabet loop*/
-for (i = 0; i <= 10; i++)
+for (i = 0; i <= 9; i++)
 {
 for (j = alphabet; j <= 'z'; j++)
 {
