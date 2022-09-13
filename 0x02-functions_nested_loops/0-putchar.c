@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- *main - Prints "Putchar into the standard output"
+ * main - Entry point
  *
- *Return: 0-always
+ * Return: nothing, return void
  */
 int main(void)
 
 {
-char string[] = "_putchar";/*Declare the array and initialise it*/
-int j = 0;
+int i; /*Declaring statements*/
+char string[9] = "Holberton"; /*Arrays*/
 
-for (j = 0; j < 9 ; j++)
+for (i = 0 ; i < 9 ; i++) /*Start for*/
 {
-_putchar(string[j]);
-}
+_putchar(string[i]);/*display word*/
+} /*End for*/
 
 _putchar('\n');
 
