@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  *main - Prints "Putchar into the standard output"
@@ -10,6 +10,7 @@ int main(void)
 {
 char string[] = "_putchar";/*Declare the array and initialise it*/
 int j = 0;
+
 for (j = 0; j < 9 ; j++)
 {
 _putchar(string[j]);
