@@ -7,20 +7,41 @@
  */
 void jack_bauer(void)
 {
-int i;
-int j;
-for (i = 0; i <= 23; i++)
+int h1 = 0;
+int n1 = 0;
+/*loop through each unit of time and print it*/
+while (h1 <= 2)
 {
-for (j = 0; i <= 59; j++)
+int h2 = 0;
+if (h1 < 2)/*check if the first unit of an hour is less than two*/
 {
-_putchar(i / 10 + '0');
-_putchar(j % 10 + '0');
-_putchar(':');
-_putchar(j / 10 + '0');
-_putchar(j % 10 + '0');
-_putchar('\n');
+n1 = 9;
 }
-
+else
+{
+n1 = 3;
+}
+while (h2 <= n1)
+{
+int m1 = 0;
+while (m1 <= 5)
+{
+int m2 = 0;
+while (m2 <= 9)
+{
+_putchar('0' + h1);
+_putchar('0' + h2);
+_putchar(':');
+_putchar('0' + m1);
+_putchar('0' + m2);
+_putchar('\n');
+m2++;
+}
+m1++;
+}
+h2++;
+}
+h1++;
 }
 
 }
