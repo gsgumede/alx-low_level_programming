@@ -9,5 +9,6 @@
 int print_last_digit(int n)
 {
 int remainder = n % 10;/*Get the remainder of an integer when divided by 10*/
+_putchar('0' + remainder);
 return (remainder);
 }
