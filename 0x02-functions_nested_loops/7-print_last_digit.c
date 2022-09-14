@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  *print_last_digit - Prints the last digit of a number
@@ -8,7 +9,27 @@
  */
 int print_last_digit(int n)
 {
-int remainder = n % 10;/*Get the remainder of an integer when divided by 10*/
+int remainder;
+if (n == INT_MIN)
+{
+remainder = (-2147483648 * -1) % 10;
+}
+else if (n == INT_MAX)
+{
+
+remainder = 2147483647 % 10;
+}
+else if (n < 0)
+{
+n = n * -1;
+remainder = n % 10;
+}
+else
+{
+remainder = n % 10;
+}
+
 _putchar('0' + remainder);
 return (remainder);
+
 }
