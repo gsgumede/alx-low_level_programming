@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - print "Holberton"
  *
- * Return: nothing, return void
+ * Return: 0
  */
 int main(void)
-
 {
-int i; /*Declaring statements*/
-char string[9] = "Holberton"; /*Arrays*/
-
-for (i = 0 ; i < 9 ; i++) /*Start for*/
-{
-_putchar(string[i]);/*display word*/
-} /*End for*/
-
-_putchar('\n');
-
-return (0);
-
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
+	return (0);
 }
