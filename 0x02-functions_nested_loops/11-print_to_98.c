@@ -9,9 +9,9 @@
 void print_to_98(int n)
 {
 
-while (n <= 98 )/*loop through and print each number*/
+while (n <= 98)/*loop through and print each number*/
 {
-if(n < 10)
+if (n < 10)
 {
 _putchar('0' + n);
 }
