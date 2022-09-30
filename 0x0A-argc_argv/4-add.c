@@ -6,7 +6,7 @@
 *
 * @argc: argument count
 * @argv: pointer to pointer to char
-* Return: 1 always
+* Return: 0 - always
 */
 int main(int argc, char **argv)
 {
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 		 printf("%d\n", result);
 	}
 
-	return (1);
+	return (0);
 
 }
 
