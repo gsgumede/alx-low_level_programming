@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 	if (count > 1)
 	{
 
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 
 	}
