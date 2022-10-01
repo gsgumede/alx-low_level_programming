@@ -36,7 +36,6 @@ int main(int argc, char **argv)
 	}
 
 	return (0);
-
 }
 
 /**
@@ -116,6 +115,7 @@ int check_if_number(int argc, char **argv)
 	else
 	{
 		return (0);
+
 	}
 }
 
