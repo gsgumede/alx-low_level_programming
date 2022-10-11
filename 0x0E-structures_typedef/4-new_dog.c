@@ -68,8 +68,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	copy_strin(name, new_d->name, get_len(name));
-	copy_strin(owner, new_d->owner, get_len(name));
-	new_d->age = age;
+	copy_strin(owner, new_d->owner, get_len(owner));
+	new_d->age = (float) age;
 	return (new_d);
 }
 
