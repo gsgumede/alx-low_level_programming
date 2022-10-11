@@ -14,17 +14,15 @@ int get_len(char *s);
 int get_len(char *s)
 {
 	int i = 0;
-	
+
 	while (s[i])
-	{
 		i++;
-	}
 	return (i);
 }
 
 /**
  * copy_strin - copies the contents of the string
- * 
+ *
  * @src: address of the source string
  * @dst: address of the destination string
  * @len: length of the string
@@ -34,11 +32,11 @@ void copy_strin(char *src, char *dst, int len)
 {
 	int i;
 
-	len++;
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
-		src[i] = dst[i];
+		*(dst + i) = *(src + i);
 	}
+
 }
 
 /**
@@ -60,11 +58,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	new_d->name = malloc(sizeof(char) * (get_len(name) + 1));
 	new_d->owner = malloc(sizeof(char) * (get_len(owner) + 1));
-	if (d->name == NULL || d->owner == NULL)
+	if (new_d->name == NULL || new_d->owner == NULL)
 	{
 		free(new_d);
 		return (NULL);
-	}	
+	}
 	copy_strin(name, new_d->name, get_len(name));
 	copy_strin(owner, new_d->owner, get_len(name));
 	new_d->age = age;
