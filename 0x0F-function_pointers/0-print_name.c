@@ -4,7 +4,7 @@
 *
 * @name: name to be printed in string
 * @f: address of the first code in the print function
-* Return:
+* Return: nothing
 */
 void print_name(char *name, void (*f)(char *))
 {
