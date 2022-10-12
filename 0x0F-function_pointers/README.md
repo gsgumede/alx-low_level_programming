@@ -1,0 +1,1 @@
+Write a function that prints name, the function accepts a string and a function pointer.
