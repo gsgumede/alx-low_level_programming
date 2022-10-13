@@ -16,7 +16,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int num_tmp;
 	char *tmp;
 	va_list strin;
-
+	
+	if (n == 0)
+		return;
 	va_start(strin, n);
 	num_tmp = n;
 	num_tmp--;
