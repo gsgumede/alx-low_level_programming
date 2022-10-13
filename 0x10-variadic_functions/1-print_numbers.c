@@ -26,8 +26,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (index = 0; index < n; index++)
 	{
 		printf("%d", va_arg(nums, int));
-		if (index < cut_of)
+		if (separator != NULL && index < cut_of)
 			printf("%s", separator);
+		else
+			print(" ");
 	}
 	printf("\n");
 	va_end(nums);
