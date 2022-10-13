@@ -29,7 +29,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (separator != NULL && index < cut_of)
 			printf("%s", separator);
 		else
-			print(" ");
+			printf(" ");
 	}
 	printf("\n");
 	va_end(nums);
