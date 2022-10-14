@@ -13,12 +13,12 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int index;
-	unsigned int cut_of;
+	unsigned int cut_off;
 	va_list nums;
 
 	va_start(nums, n);
-	cut_of = n;
-	cut_of--;
+	cut_off = n;
+	cut_off--;
 	for (index = 0; index < n; index++)
 	{
 		printf("%d", va_arg(nums, int));
@@ -27,5 +27,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(nums);
-}
 
+}
