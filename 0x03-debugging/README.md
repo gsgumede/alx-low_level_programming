@@ -7,7 +7,8 @@
 - Ubuntu 20.04
 - gcc gnu89
 ## Files
-**[0-main.c](0-main.c) [main.h](main.h)** - debugging tutorial  
+**[0-main.c](0-main.c) - debugging tutorial  
 **[2-largest_number.c](2-largest_number.c)** debugging tutorial  
 **[3-print_remaining_days.c](3-print_remaining_days.c)** - debugging tutorial  
+**[main.h](main.h)** - main
 
