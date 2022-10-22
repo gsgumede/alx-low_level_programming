@@ -12,29 +12,17 @@ void print_con(char *str, unsigned int len);
  */
 size_t print_list(const list_t *h)
 {
-	const list_t *temp;
-	char *nil;
-	unsigned int count;
+	size_t nodes = 0;
 
-	if (h == NULL)
-		return (0);
-	nil = "(nil)";
-	count = 0;
 	while (h != NULL)
 	{
-		temp = h;
 		if (h->str == NULL)
-		{
-			printf("[0] ");
-			printf("%s\n", nil);
-		}
+			printf("[0] (nil)\n");
 		else
-		{
 			printf("[%d] %s\n", h->len, h->str);
-		}
-		h = temp->next;
-		count++;
+		nodes++;
+		h = h->next;
 	}
-	return (count);
+	return (nodes);
 }
 
