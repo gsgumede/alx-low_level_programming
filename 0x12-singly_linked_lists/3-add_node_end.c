@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * add_node - adds a new node at the end of a list
+ * add_node_end - adds a new node at the end of a list
  *
  * @head: pointer to the list
  * @str: string to be added to the node
