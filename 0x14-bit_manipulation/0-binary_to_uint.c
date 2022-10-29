@@ -10,7 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int number, temp;
-	int len;
+	int len, count;
 
 	if (b == NULL)
 		return (0);
@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		len++;
 	}
-	number = 0;
+	number = 0, count = 0;
 	while(len > 0)
 	{
 		len--;
@@ -27,11 +27,11 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		if (b[len] == '1')
 		{
-			temp = 0;
 			temp = 1;
-			temp <<= len;
-			number = temp + number;
+			temp <<= count;
+			number = temp | number;
 		}
+		count++;
 	}
 	return (number);
 }
